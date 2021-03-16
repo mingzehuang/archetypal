@@ -81,10 +81,34 @@ Classes that support the :ref:`templates_label` classes above.
     WindowType
     ShadingType
 
+UMI Measures
+------------
+
+.. currentmodule:: archetypal.template.measures
+
+.. autosummary::
+    :template: autosummary.rst
+    :nosignatures:
+    :toctree: reference/
+
+    Measure
+
+Available Measures
+..................
+
+.. autosummary::
+    :template: autosummary.rst
+    :nosignatures:
+    :toctree: reference/
+
+    EnergyStarUpgrade
+    SetFacadeConstructionThermalResistanceToEnergyStar
+
+
 Graph Module
 ------------
 
-.. currentmodule:: archetypal.template
+.. currentmodule:: archetypal.zone_graph
 
 .. autosummary::
     :template: autosummary.rst
@@ -129,56 +153,6 @@ Data Portal
     download_bld_window
 
 
-EnergyDataFrame
----------------
-
-.. currentmodule:: archetypal.energypandas
-
-.. autosummary::
-    :template: autosummary-noinherit.rst
-    :nosignatures:
-    :toctree: reference/
-
-    EnergyDataFrame
-    EnergySeries.to_units
-    EnergySeries.normalize
-    EnergyDataFrame.discretize_tsam
-
-
-EnergySeries
-------------
-
-.. currentmodule:: archetypal.energypandas
-
-.. autosummary::
-    :template: autosummary.rst
-    :nosignatures:
-    :toctree: reference/
-
-    EnergySeries
-    EnergySeries.from_reportdata
-    EnergySeries.to_units
-    EnergySeries.normalize
-    EnergySeries.ldc_source
-    EnergySeries.source_side
-    EnergySeries.discretize_tsam
-    EnergySeries.plot3d
-    EnergySeries.plot2d
-    EnergySeries.p_max
-    EnergySeries.p_max
-    EnergySeries.monthly
-    EnergySeries.capacity_factor
-    EnergySeries.bin_edges
-    EnergySeries.time_at_min
-    EnergySeries.bin_scaling_factors
-    EnergySeries.duration_scaling_factor
-    EnergySeries.ldc
-    EnergySeries.nseries
-    save_and_show
-    plot_energyseries
-    plot_energyseries_map
-
-
 Report Data
 -----------
 
@@ -206,28 +180,6 @@ Tabular Data
 
     TabularData.from_sql
     TabularData.filter_tabular_data
-
-IDF to BUI module
------------------
-
-.. currentmodule:: archetypal.trnsys
-
-.. autosummary::
-    :template: autosummary.rst
-    :nosignatures:
-    :toctree: reference/
-
-    convert_idf_to_trnbuild
-    get_idf_objects
-    clear_name_idf_objects
-    zone_origin
-    closest_coords
-    parse_window_lib
-    choose_window
-    trnbuild_idf
-
-
-
 
 
 Utils
